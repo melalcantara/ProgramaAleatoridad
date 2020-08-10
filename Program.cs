@@ -33,8 +33,6 @@ namespace RandomProgram1
                 if ((students.Length >= groups.Length) && (topics.Length >= groups.Length))
                 {
 
-
-
                     //Se crean listas
                         List<string> studentsList = new List<string>();
                         foreach (var est in students) //Recorre el arreglo de students
@@ -116,13 +114,7 @@ namespace RandomProgram1
                             Console.Write($"{sel.Replace($"- {grp}","")}, ");
                         }
                     }
-                    
-
-                        Console.ForegroundColor = ConsoleColor.Cyan;
-                        ////foreach (var sel in TxG)
-                        ////{
-                        ////    Console.WriteLine(sel);
-                        ////}
+                   
 
                 }
                 else
