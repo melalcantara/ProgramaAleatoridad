@@ -103,13 +103,13 @@ namespace RandomProgram1
                         {
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"\nGRUPO {grp}:");
-                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Temas del Grupo : Cantidad {TxG.Where(a => a.Contains(grp)).Count()}");
                         foreach (var sel in TxG.Where(a=> a.Contains(grp)))
                         {
                             Console.Write($"{sel.Replace($"- {grp}","")}, ");
                         }
-                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"\nEstudiantes del Grupo : Cantidad {ExG.Where(a => a.Contains(grp)).Count()}");
                         foreach (var sel in ExG.Where(a => a.Contains(grp)))
                         {
